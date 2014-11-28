@@ -14,6 +14,8 @@ var Application = require('decaf-jolt').Application,
 
 app.verb('/', function(req, res) {
     var page = new Page(req.res);
+    debugger
     page.render('home');
 });
 app.listen(9090, '127.0.0.1');
+console.log('ractive on 9090');
