@@ -1,0 +1,12 @@
+{
+  "name": "decaf-ractive",
+  "version": "0.0.1",
+  "main": "index.js",
+  "ignore": [
+  ],
+  "dependencies": {
+    "ractive" : "*"
+  },
+  "devDependencies": {
+  }
+}
