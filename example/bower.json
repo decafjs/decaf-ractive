@@ -1,0 +1,17 @@
+{
+  "name": "decaf-ractive-example",
+  "version": "0.1.7",
+  "main" : "index.js",
+  "ignore" : [
+  ],
+  "dependencies" : {
+    "decaf": "git://github.com/decafjs/decaf#master",
+    "decaf-jolt": "git://github.com/decafjs/decaf-jolt#master",
+    "decaf-jolt-static": "git://github.com/decafjs/decaf-jolt-static#master",
+    "decaf-jolt-sjs": "git://github.com/decafjs/decaf-jolt-sjs#master",
+    "decaf-hoganjs": "git://github.com/decafjs/decaf-hoganjs#master",
+    "decaf-ractive" : "git:/github.com/decafjs/decar-ractive#master"
+  },
+  "devDependencies": {
+  }
+}
