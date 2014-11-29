@@ -6,21 +6,25 @@
 
 var Ractive = require('decaf-ractive').Ractive,
     TemplateManager = require('decaf-ractive').TemplateManager,
-    templateManager = new TemplateManager('partials');;
+    templateManager = new TemplateManager('partials');
+;
 
 //Ractive.partials = new TemplateManager('partials');
 
 function Page(req, res) {
     this.req = req;
     this.res = res;
-    console.log(req.uri);
-    //this._scripts = [];
-    //this._css = [];
+    this._scripts = [];
+    this._css = [];
 }
 
 decaf.extend(Page.prototype, {
     render: function (tpl, o) {
-        o = decaf.extend({ tpl: tpl }, o);
+        o = decaf.extend({
+            scripts: this._scripts,
+            css: this._css,
+            tpl: tpl
+        }, o);
         var ractive = new Ractive({
             template: templateManager['page'],
             partials: templateManager,
