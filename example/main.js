@@ -13,7 +13,7 @@ var Application = require('decaf-jolt').Application,
     app = new Application();
 
 app.verb('/', function(req, res) {
-    var page = new Page(req.res);
+    var page = new Page(req, res);
     debugger
     page.render('home');
 });
